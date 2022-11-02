@@ -1,24 +1,35 @@
 import React, { useEffect, useState } from 'react';
+import axiosConfig from '../rAPI/axios';
 import Button from '@mui/material/Button';
 import Emoji from './Emoji';
 
 function ChatBox(props) {
   const [textCheckedShow, setTextCheckedShow] = useState(false)
-  const [url, setUrl] = useState(
-    'https://hn.algolia.com/api/v1/search?query=redux',
-  );
+
+  const bodyParameters = {
+     "queryInput": {
+        "text": {
+           "text": "hello",
+           "languageCode": "en"
+        }
+     },
+     "queryParams": {
+     }
+  };
   
   useEffect(() => {
     const fetchData = async () => {
-      const result = await axios(
-        `http://hn.algolia.com/api/v1/search?query=${query}`,
-      );
-
-      setData(result.data);
+      const result = await
+        axiosConfig.post(
+          bodyParameters
+        );
+      console.log(result)
+      //setData(result.data);
     };
 
     fetchData();
-  }, [query]);
+  }, []);
+  // [query]);
 
   return (
     <div>
