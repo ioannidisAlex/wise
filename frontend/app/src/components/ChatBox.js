@@ -11,6 +11,7 @@ function ChatBox(props) {
   const [tipy, setTipy] = useState("");
   const [searchQuery, setSearchQuery] = useState(null)
   const [firstRender, setFirstRender] = useState(true)
+  const inputEl = useRef(null);
 
   const bodyParameters = {
      "queryInput": {
@@ -41,15 +42,10 @@ function ChatBox(props) {
     setFirstRender(false)
   }, [searchQuery]);
 
-  const sendHandler  = e => {
-    const timer = setTimeout(() => 3000);
-    return true
-  }
-
   return (
     <div>
-      <TextField 
-        id="standard-basic" 
+      <input 
+        ref={inputEl} 
         label="Standard" 
         variant="filled"
         value={tipy}
@@ -60,11 +56,12 @@ function ChatBox(props) {
                         setTextCheckedShow(true); 
                         setSearchQuery(tipy)
                         setTipy("")
+                        inputEl.current.focus()
                         }
                       }>
               <Emoji symbol="🐑" label="sheep"/>
       </Button>
-      {textCheckedShow && sendHandler() && (<h2> Send</h2>) }
+      {textCheckedShow && (<h2> Send</h2>) }
     </div>
 
     );
