@@ -1,9 +1,14 @@
-import Chatbox from './components/ChatBox';
+import {
+  MessageBar,
+  CompanionChatTable,
+  Footer,
+  InputAndSend,
+  Message,
+  MessageSend,
+} from "./components/componentfile";
 
 function App() {
-  return (
-    <Chatbox></Chatbox>
-  );
+  return <CompanionChatTable />;
 }
 
 export default App;

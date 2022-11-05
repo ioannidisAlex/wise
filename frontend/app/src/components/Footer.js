@@ -1,6 +1,8 @@
 function Footer() {
 	return (
-		
+		<div>
+			<InputAndSend />
+		</div>
 	);
 }
 

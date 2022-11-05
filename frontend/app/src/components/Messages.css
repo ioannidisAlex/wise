@@ -1,0 +1,16 @@
+.messages {
+  display: flex;
+  background-color: #284b63;
+  padding: 30px;
+  height: calc(100% - 160px);
+  overflow-y: scroll;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.messages {
+  background-color: #284b63;
+  padding: 30px;
+  height: calc(100% - 160px);
+  overflow-y: scroll;
+}
