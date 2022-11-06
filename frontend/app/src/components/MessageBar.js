@@ -23,8 +23,8 @@ const MessageBar = (props) => {
   });
 
   return (
-    <div>
-      <div className="messages">{rows}</div>{" "}
+    <div className="messages">
+      <tbody>{rows}</tbody>
     </div>
   );
 };

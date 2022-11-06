@@ -1,9 +1,7 @@
+import InputAndSend from "./InputAndSend";
+
 function Footer() {
-	return (
-		<div>
-			<InputAndSend />
-		</div>
-	);
+	return <InputAndSend />;
 }
 
 export default Footer;

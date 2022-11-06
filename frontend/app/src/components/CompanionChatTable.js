@@ -7,6 +7,7 @@ function CompanionChatTable(props) {
 		<div className="home">
 			<div className="container">
 				<MessageBar />
+				<Footer />
 			</div>
 		</div>
 	);
