@@ -7,14 +7,13 @@ const MessageBar = (props) => {
 
   const MESSAGES = [
     { thoughtMessage: "I feel tired" },
-    { thoughtMessage: "I have negative thought" },
-    { thoughtMessage: "I feeel much lighter" },
+    { thoughtMessage: "Hi " },
+    { thoughtMessage: "Hi, there" },
     {
-      thoughtMessage:
-        "I mishear what vlasis said and i said i would go live outside house after this andriana smiled back and repeatede",
+      thoughtMessage: "I said hi, hi there",
     },
     { thoughtMessage: "That's all" },
-    { thoughtMessage: "I agree!" },
+    { thoughtMessage: "I agree" },
     { thoughtMessage: "Let's just talk" },
   ];
 

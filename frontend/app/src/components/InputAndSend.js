@@ -1,14 +1,22 @@
+import Avatar from "@mui/material/Avatar";
+import IconButton from "@mui/material/IconButton";
+import SendIcon from "@mui/icons-material/Send";
 import TextareaAutosize from "@mui/base/TextareaAutosize";
 import "./InputAndSend.css";
 
 function InputAndSend() {
 	return (
-		<TextareaAutosize
-			className="textauto"
-			maxRows={4}
-			aria-label="maximum height"
-			style={{ width: 200 }}
-		/>
+		<div className="text-wrapper">
+			<Avatar>H</Avatar>
+			<TextareaAutosize
+				className="textauto"
+				maxRows={4}
+				placeholder="message..."
+			/>
+			<IconButton aria-label="Example">
+				<SendIcon />
+			</IconButton>
+		</div>
 	);
 }
 

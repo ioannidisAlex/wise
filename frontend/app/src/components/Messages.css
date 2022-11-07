@@ -1,6 +1,7 @@
 .messages {
   display: flex;
   background-color: #284b63;
+  border-radius: 10px 10px 0px 0px;
   padding: 30px;
   height: calc(100% - 160px);
   overflow-y: scroll;
@@ -11,6 +12,6 @@
 .messages {
   background-color: #284b63;
   padding: 30px;
-  height: calc(95% - 130px);
+  height: calc(95% - 110px);
   overflow-y: scroll;
 }
