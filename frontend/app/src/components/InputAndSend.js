@@ -9,7 +9,7 @@ function InputAndSend() {
 		<div className="text-wrapper">
 			<Avatar>H</Avatar>
 			<TextareaAutosize
-				className="textauto"
+				className="textInput"
 				maxRows={4}
 				placeholder="message..."
 			/>

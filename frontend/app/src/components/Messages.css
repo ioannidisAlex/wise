@@ -3,15 +3,8 @@
   background-color: #284b63;
   border-radius: 10px 10px 0px 0px;
   padding: 30px;
-  height: calc(100% - 160px);
+  height: calc(95% - 110px);
   overflow-y: scroll;
   flex-direction: column;
   justify-content: flex-start;
-}
-
-.messages {
-  background-color: #284b63;
-  padding: 30px;
-  height: calc(95% - 110px);
-  overflow-y: scroll;
 }
