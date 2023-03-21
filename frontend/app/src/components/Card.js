@@ -1,14 +1,9 @@
-import React from "react";
-
 const Card = (props) => {
+  console.log(props);
   return (
-    <div className="wrapper">
-      <div className="card">
-        <div className="card__body">
-          <h2 className="card__title">{props.title}</h2>
-          <p className="card__description">{props.description}</p>
-        </div>
-      </div>
+    <div className="card">
+      <h2 className="card__title">{props.title}</h2>
+      <p className="card__description">{props.description}</p>
     </div>
   );
 };

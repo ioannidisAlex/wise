@@ -7,14 +7,14 @@ import {
   Message,
   MessageSend,
 } from "./components/componentfile";
-import Card from "./components/Card.js";
+import MenuCards from "./components/MenuCards.js";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/raf" element={<CompanionChatTable />} />
-        <Route path="/daf" element={<Card />} />
+        <Route path="/daf" element={<MenuCards />} />
       </Routes>
     </Router>
   );
